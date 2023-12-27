@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: hacbs-test-project-e8vi
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/kasem_org/integration3-kitf-tenant/integ-app-mqmz/hacbs-test-project-e8vi@sha256:6afb73cf0bbba61d1d26caa76a5e06ac84ace65a6aadabe05331e4b14c7aca27
+        name: hacbs-jvm-build-test-project
+        resources: {}
+status: {}
